@@ -1,0 +1,16 @@
+[Unit]
+Description=Chromium Dashboard
+Requires=graphical.target
+After=graphical.target
+
+[Service]
+Environment=DISPLAY=:0.0
+Environment=XAUTHORITY=/home/manatech/.Xauthority
+ExecStartPre=/home/manatech/kiosk/kiosk.sh
+ExecStart=usr/bin/chromium-browser --noerrdialogs --disable-infobars --kiosk $URL
+Restart=on-abort
+User=manatech
+Group=manatech
+
+[Install]
+WantedBy=graphical.target
