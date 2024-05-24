@@ -32,7 +32,7 @@ En este punto, el navegador debe haberse abierto en pantalla completa con el URL
 
 ```./hide_mouse.sh```
 
-- kiosk.sh:  Script para configurar algunas cosas del navegador.
+- kiosk.sh:  Este script se invoca antes de abrir el navegador, su funcion es hacerle creer a chromium que la ultima vez que se estuvo usando el navegador se pudo cerrar de manera exitosa. Esto impide que aparezcan ciertos molestos mensajes.
 
 
 
