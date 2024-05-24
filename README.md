@@ -21,7 +21,7 @@ Este repositorio cuenta con tres archivos que necesitaremos para poner nuestra i
 - kiosk.service: Unit file que colocaremos en /etc/systemd/system/
 **Es importante que modifiquemos este archivo para colocar el usuario que usaremos para correr este servicio, asi como el URL que mostrara el navegador. Tambien debemos tener en cuenta si el path de el script kiosk.sh que descargaste al clonar este repositorio es el correcto.**
 ```
-sudo mv ./kiosk.service /etc/systemd/system/
+sudo cp ./kiosk.service /etc/systemd/system/
 sudo systemctl daemon-reload
 sudo systemctl enable kiosk.service
 sudo systemctl start kiosk.service
