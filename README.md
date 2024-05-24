@@ -13,7 +13,7 @@ Una vez nos aseguramos de que tenemos chromium instalado, clonar el repositorio 
 
 ```
 git clone https://github.com/f-reyes/raspbian-kiosk.git
-cd rasbian-kiosk
+cd raspbian-kiosk
 ```
 
 Este repositorio cuenta con tres archivos que necesitaremos para poner nuestra instalacion Raspbian en modo quiosco:
